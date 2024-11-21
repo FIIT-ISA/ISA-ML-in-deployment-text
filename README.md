@@ -4,8 +4,8 @@ Example of text classification inference. You can send your messaged either by c
 
 Author(s):
 - Matej Volansky (2024)
-- as a part of the Team project for the course preparation in 2023/2024
-
+- as a part of the team work preparation in 2023/2024
+  
 Docker image size: `578 MB` ( build takes quite some time )
 
 File the model was trained from: [IAU_072_sentiment_analysis_in_text.ipynb](https://github.com/FIIT-IAU/IAU-course/blob/main/exercises/week-09/IAU_02_sentiment_analysis_in_text.ipynb)
