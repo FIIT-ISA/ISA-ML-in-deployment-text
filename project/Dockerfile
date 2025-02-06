@@ -13,15 +13,15 @@ RUN echo "deb http://ftp.us.debian.org/debian bookworm main" > /etc/apt/sources.
     && echo "deb http://security.debian.org/ bookworm-security main" >> /etc/apt/sources.list \
     && apt-get update -y --fix-missing \
     && apt-get install -y \
-        gcc \
-        build-essential \
+    gcc \
+    build-essential \
     && rm -rf /var/lib/apt/lists/*
 
 # Install any needed packages specified in requirements.txt
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Download NLTK data
-RUN python -m nltk.downloader stopwords punkt averaged_perceptron_tagger wordnet
+RUN python -m nltk.downloader stopwords punkt_tab averaged_perceptron_tagger_eng wordnet
 
 # Make port 5000 available to the world outside this container
 EXPOSE 8080
